@@ -1,0 +1,76 @@
+RESULT:  Partially Accepted
+Score
+7
+
+ 
+Time (sec)
+67.072111
+
+ 
+Memory (KiB)
+1688
+
+ 
+Language
+C++
+
+Input	Result	Time (sec)	Memory (KiB)	Score
+Input #1		0.101152	64	1
+Input #2		0.101193	64	1
+Input #3		0.101026	64	1
+Input #4		0.102737	64	1
+Input #5		0.101	64	1
+Input #6		0.526392	420	2
+Input #7		2.0015	492	0.0
+Input #8		2.0015	492	0.0
+Input #9		2.000917	492	0.0
+Input #10		2.000174	492	0.0
+Input #11		2.000574	492	0.0
+Input #12		2.0015	1688	0.0
+Input #13		2.0015	1688	0.0
+Input #14		2.0015	1688	0.0
+Input #15		2.0015	1688	0.0
+Input #16		2.0015	1688	0.0
+Input #17		2.000355	1688	0.0
+Input #18		2.0015	1688	0.0
+Input #19		2.000128	1688	0.0
+Input #20		2.0015	1688	0.0
+Input #21		2.0015	1688	0.0
+Input #22		2.0015	1688	0.0
+Input #23		2.0015	1688	0.0
+Input #24		2.000258	1688	0.0
+Input #25		2.0015	1688	0.0
+Input #26		2.0015	1688	0.0
+Input #27		2.0015	1688	0.0
+Input #28		2.000673	1688	0.0
+Input #29		2.0015	1688	0.0
+Input #30		2.000468	1688	0.0
+Input #31		2.0015	1688	0.0
+Input #32		2.0015	1688	0.0
+Input #33		2.002165	1688	0.0
+Input #34		2.000748	1688	0.0
+Input #35		2.0015	1688	0.0
+Input #36		2.0015	1688	0.0
+Input #37		2.0015	492	0.0
+Input #38		2.000452	492	0.0
+Input #39		2.000199	492	0.0
+
+/*
+         * Read input from stdin and provide input before running
+         * Use either of these methods for input
+
+        //BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line = br.readLine();
+        int N = Integer.parseInt(line);
+
+        //Scanner
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt();
+
+        for (int i = 0; i < N; i++) {
+            System.out.println("hello world");
+        }
+        */
+
+        System.out.println("Hello World!");
