@@ -1,7 +1,7 @@
 package p2;
 
 import p1.Animal;
-class Cat extends Animal
+public class Cat extends Animal
 {
     public Cat(){
         super.name = "benny";//possible
