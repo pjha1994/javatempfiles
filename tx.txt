@@ -1,0 +1,227 @@
+total 1111
+12831894 drwxr-xr-x    1 pjha1994 Administ    65536 Nov  3 20:57 .
+ 229242 dr-xr-xr-x   44 pjha1994 Administ    12288 Nov  3 08:49 ..
+ 604775 drwxr-xr-x    1 pjha1994 Administ     4096 Nov  3 20:24 .git
+14296133 -rw-r--r--    1 pjha1994 Administ        0 Nov  3 19:00 0
+7873446 -rw-r--r--    1 pjha1994 Administ        0 Nov  3 19:00 0){
+3743875 -rw-r--r--    1 pjha1994 Administ      377 Oct 28 13:51 A.class
+4713768 -rw-r--r--    1 pjha1994 Administ      398 Oct 28 13:51 A1.class
+3085020 -rw-r--r--    1 pjha1994 Administ      274 Oct 28 13:51 A2.class
+12779281 -rw-r--r--    1 pjha1994 Administ      323 Oct 28 13:51 ATMCard.class
+ 987374 -rw-r--r--    1 pjha1994 Administ      394 Oct 28 13:51 Account1.class
+3084394 -rw-r--r--    1 pjha1994 Administ      705 Oct 28 13:51 AccountChecker.class
+10996356 -rw-r--r--    1 pjha1994 Administ      205 Oct 28 13:51 AlreadyCardExistsException.class
+4718108 -rw-r--r--    1 pjha1994 Administ      225 Oct 27 14:53 Animal.class
+5241392 -rw-r--r--    1 pjha1994 Administ       67 Oct 27 14:43 Animal.java
+1650342 -rw-r--r--    1 pjha1994 Administ     1025 Oct 28 13:51 ArrayListExample.class
+ 930832 -rw-r--r--    1 pjha1994 Administ     1239 Oct 28 13:51 ArrayStack.class
+5704887 -rw-r--r--    1 pjha1994 Administ    10440 Oct 15 05:17 ArrayStack.html
+8847958 -rw-r--r--    1 pjha1994 Administ    27837 Oct 15 05:15 ArrayStack.java
+2695364 -rw-r--r--    1 pjha1994 Administ      967 Oct 28 13:51 Attr.class
+ 864604 -rw-r--r--    1 pjha1994 Administ      362 Oct 28 13:51 B.class
+5762350 -rw-r--r--    1 pjha1994 Administ      384 Oct 28 13:51 B1.class
+5242400 -rw-r--r--    1 pjha1994 Administ      270 Oct 28 13:51 B2.class
+5191120 -rw-r--r--    1 pjha1994 Administ      201 Oct 28 13:51 BadDataSetException.class
+19608990 -rw-r--r--    1 pjha1994 Administ      346 Oct 28 13:51 BankAccount.class
+11532561 -rw-r--r--    1 pjha1994 Administ      407 Oct 28 13:51 Benchmark.class
+8851190 -rw-r--r--    1 pjha1994 Administ     1846 Oct 28 13:51 Body.class
+6750656 -rw-r--r--    1 pjha1994 Administ      529 Oct 28 13:51 Book.class
+1904346 -rw-r--r--    1 pjha1994 Administ      755 Oct 23 09:36 BracketChecker.class
+4001481 -rw-r--r--    1 pjha1994 Administ     1095 Oct 23 09:36 BracketsApp.class
+3085736 -rw-r--r--    1 pjha1994 Administ      376 Oct 28 13:51 Builder.class
+3020213 -rw-r--r--    1 pjha1994 Administ      193 Oct 28 13:51 BuilderContext.class
+5241408 -rw-r--r--    1 pjha1994 Administ      463 Oct 30 09:28 Cat.java
+18182783 -rw-r--r--    1 pjha1994 Administ      672 Oct 28 13:51 Cell.class
+2892342 -rw-r--r--    1 pjha1994 Administ      982 Oct 28 13:51 ColorAttr.class
+5705646 -rw-r--r--    1 pjha1994 Administ      599 Oct 28 13:51 CreditCardAccount.class
+8912522 -rw-r--r--    1 pjha1994 Administ      596 Oct 28 13:51 CreditCardAccount1.class
+11523022 -rw-r--r--    1 pjha1994 Administ      468 Oct 28 13:51 DailyWorker.class
+ 668660 -rw-r--r--    1 pjha1994 Administ      777 Oct 28 13:51 Database.class
+4666797 -rw-r--r--    1 pjha1994 Administ      409 Oct 28 13:51 Date1.class
+ 798353 -rw-r--r--    1 pjha1994 Administ      441 Oct 28 13:51 Deck.class
+5577463 -rw-r--r--    1 pjha1994 Administ      920 Oct 25 05:49 Difference.class
+3875448 -rw-r--r--    1 pjha1994 Administ      649 Oct 28 13:51 Echo.class
+2031675 -rw-r--r--    1 pjha1994 Administ      197 Oct 28 13:51 ExceptionQWERT1.class
+11533323 -rw-r--r--    1 pjha1994 Administ      197 Oct 28 13:51 ExceptionQWERTY.class
+3876139 -rw-r--r--    1 pjha1994 Administ      852 Oct 28 13:51 ExtendsShow.class
+3741258 -rw-r--r--    1 pjha1994 Administ      543 Oct 28 13:51 Foo.class
+4064401 -rw-r--r--    1 pjha1994 Administ      187 Oct 28 13:51 HerClass.class
+11785143 -rw-r--r--    1 pjha1994 Administ      476 Oct 28 13:51 HourlyWorker.class
+8062191 -rw-r--r--    1 pjha1994 Administ     1171 Oct 28 13:51 IntegerStack.class
+2560107 -rw-r--r--    1 pjha1994 Administ      455 Oct 28 13:51 LSP1.class
+15532794 -rw-r--r--    1 pjha1994 Administ      824 Oct 28 13:51 LSP2.class
+11359119 -rw-r--r--    1 pjha1994 Administ      525 Oct 28 13:51 LectureClass.class
+ 663553 -rw-r--r--    1 pjha1994 Administ     1312 Oct 28 13:51 Line.class
+3026653 -rw-r--r--    1 pjha1994 Administ      467 Oct 27 13:13 Link.class
+ 994985 -rw-r--r--    1 pjha1994 Administ      191 Oct 28 13:51 Lookup.class
+5920286 -rw-r--r--    1 pjha1994 Administ     1729 Oct 28 13:51 M.class
+2892045 -rw-r--r--    1 pjha1994 Administ     1877 Oct 28 13:51 Matrix.class
+1974530 -rw-r--r--    1 pjha1994 Administ     1127 Oct 28 13:51 Matrix1.class
+1908674 -rw-r--r--    1 pjha1994 Administ     1097 Oct 28 13:51 MediaPlayer.class
+2957235 -rw-r--r--    1 pjha1994 Administ      979 Oct 28 13:51 MediaTest.class
+6882323 -rw-r--r--    1 pjha1994 Administ      869 Oct 28 13:51 MethodBenchmark.class
+ 798224 -rw-r--r--    1 pjha1994 Administ     1080 Oct 28 13:51 More.class
+2695765 -rw-r--r--    1 pjha1994 Administ     2080 Oct 28 13:51 MyArrayList.class
+8329840 -rw-r--r--    1 pjha1994 Administ      984 Oct 28 13:51 MyArrayStack.class
+2766090 -rw-r--r--    1 pjha1994 Administ      866 Oct 20 07:05 MyBook.class
+2950282 -rw-r--r--    1 pjha1994 Administ      376 Oct 28 13:51 MyClass.class
+16753570 -rw-r--r--    1 pjha1994 Administ      190 Oct 28 13:51 MyUtilities.class
+5963940 -rw-r--r--    1 pjha1994 Administ      593 Oct 28 13:51 NamedObj.class
+3678134 -rw-r--r--    1 pjha1994 Administ      278 Oct 27 13:13 Node.class
+1647927 -rw-r--r--    1 pjha1994 Administ      983 Oct 28 13:51 Numbers.class
+11134732 -rw-r--r--    1 pjha1994 Administ      819 Oct 28 13:51 PassByValue.class
+9431138 -rw-r--r--    1 pjha1994 Administ      893 Oct 28 13:51 PassRef.class
+2829874 -rw-r--r--    1 pjha1994 Administ      256 Oct 28 13:51 Permissions.class
+17511479 -rw-r--r--    1 pjha1994 Administ      185 Oct 28 13:51 Person.class
+1705687 -rw-r--r--    1 pjha1994 Administ      573 Oct 28 13:51 Person1.class
+2695770 -rw-r--r--    1 pjha1994 Administ      248 Oct 28 13:51 Pixel.class
+ 992824 -rw-r--r--    1 pjha1994 Administ      900 Oct 28 13:51 Point.class
+ 783335 -rw-r--r--    1 pjha1994 Administ        0 Oct 20 08:00 Q
+2004821 -rw-r--r--    1 pjha1994 Administ      184 Oct 28 13:51 Reuse.class
+ 792681 -rw-r--r--    1 pjha1994 Administ    61823 Oct 28 13:43 Reuse.java
+1971470 -rw-r--r--    1 pjha1994 Administ      453 Oct 28 13:51 RunBuilder.class
+ 860265 -rw-r--r--    1 pjha1994 Administ      594 Oct 28 13:51 RunDatabase.class
+2818887 -rw-r--r--    1 pjha1994 Administ      194 Oct 28 13:51 RunIntegerStack.class
+6630242 -rw-r--r--    1 pjha1994 Administ      758 Oct 28 13:51 RunStudentATMCard.class
+ 991223 -rw-r--r--    1 pjha1994 Administ      943 Oct 28 13:51 RunVertex.class
+11472786 -rw-r--r--    1 pjha1994 Administ      667 Oct 28 13:51 SavingAccount.class
+11408116 -rw-r--r--    1 pjha1994 Administ      320 Oct 28 13:51 SavingAccount1.class
+4923963 -rw-r--r--    1 pjha1994 Administ      190 Oct 28 13:51 ScreenColor.class
+2698915 -rw-r--r--    1 pjha1994 Administ     1615 Oct 28 13:51 SimpleLookup.class
+3810096 -rw-r--r--    1 pjha1994 Administ      434 Oct 28 13:51 SimpleSortDouble.class
+2038911 -rw-r--r--    1 pjha1994 Administ      376 Oct 28 13:51 SingleLinkedQueue.class
+17765155 -rw-r--r--    1 pjha1994 Administ      812 Oct 25 05:49 Solution.class
+2095986 -rw-r--r--    1 pjha1994 Administ      772 Oct 28 13:51 Solution1.class
+9634029 -rw-r--r--    1 pjha1994 Administ      904 Oct 20 07:05 Solution10.class
+2619883 -rw-r--r--    1 pjha1994 Administ     1541 Oct 20 07:05 Solution11.class
+10705922 -rw-r--r--    1 pjha1994 Administ     1657 Oct 20 07:05 Solution12.class
+ 466050 -rw-r--r--    1 pjha1994 Administ      928 Oct 20 07:05 Solution13.class
+1514631 -rw-r--r--    1 pjha1994 Administ     1014 Oct 20 07:05 Solution14.class
+3022827 -rw-r--r--    1 pjha1994 Administ     1182 Oct 20 07:05 Solution15.class
+2634986 -rw-r--r--    1 pjha1994 Administ      613 Oct 20 07:05 Solution16.class
+4863185 -rw-r--r--    1 pjha1994 Administ     1179 Oct 20 07:29 Solution17.class
+8337397 -rw-r--r--    1 pjha1994 Administ      929 Oct 28 13:51 Solution2.class
+2957275 -rw-r--r--    1 pjha1994 Administ     1265 Oct 27 13:13 Solution20.class
+2032228 -rw-r--r--    1 pjha1994 Administ      773 Oct 28 13:51 Solution3.class
+5704926 -rw-r--r--    1 pjha1994 Administ      980 Oct 28 13:51 Solution4.class
+ 928159 -rw-r--r--    1 pjha1994 Administ     1603 Oct 28 13:51 Solution5.class
+ 864601 -rw-r--r--    1 pjha1994 Administ     1273 Oct 28 13:51 Solution6.class
+1978010 -rw-r--r--    1 pjha1994 Administ     1434 Oct 28 13:51 Solution7.class
+3880082 -rw-r--r--    1 pjha1994 Administ     1069 Oct 28 13:51 Solution8.class
+6099255 -rw-r--r--    1 pjha1994 Administ     1500 Oct 28 13:51 Solution9.class
+2700417 -rw-r--r--    1 pjha1994 Administ     1777 Oct 28 13:51 SolutionSomeBODYElse.class
+5186348 -rw-r--r--    1 pjha1994 Administ     1056 Oct 28 13:51 SortDouble.class
+4137773 -rw-r--r--    1 pjha1994 Administ      942 Oct 28 13:51 SortMetrics.class
+3092094 -rw-r--r--    1 pjha1994 Administ      189 Oct 28 13:51 SortedList.class
+4006498 -rw-r--r--    1 pjha1994 Administ     1064 Oct 28 13:51 StackInheritance.class
+1842430 -rw-r--r--    1 pjha1994 Administ     1283 Oct 28 13:51 StackTest.class
+3663551 -rw-r--r--    1 pjha1994 Administ     8213 Oct 13 08:13 StackTest.html
+8851274 -rw-r--r--    1 pjha1994 Administ      607 Oct 23 09:36 StackX.class
+1843593 -rw-r--r--    1 pjha1994 Administ      964 Oct 28 13:51 StringsDemo.class
+6636540 -rw-r--r--    1 pjha1994 Administ      665 Oct 28 13:51 Student.class
+ 857376 -rw-r--r--    1 pjha1994 Administ      689 Oct 28 13:51 Student1.class
+9961305 -rw-r--r--    1 pjha1994 Administ      203 Oct 28 13:51 SubClassOfExceptionQWERTY.class
+3745045 -rw-r--r--    1 pjha1994 Administ      629 Oct 28 13:51 SuperShow.class
+3084060 -rw-r--r--    1 pjha1994 Administ        0 Nov  3 19:00 T
+3140926 -rw-r--r--    1 pjha1994 Administ      318 Oct 28 13:51 TestB1.class
+3080402 -rw-r--r--    1 pjha1994 Administ      281 Oct 28 13:51 TestB2.class
+3679026 -rw-r--r--    1 pjha1994 Administ     1099 Oct 28 13:51 TestSort.class
+52132732 -rw-r--r--    1 pjha1994 Administ      255 Oct 28 13:51 That.class
+ 603295 -rw-r--r--    1 pjha1994 Administ      846 Oct 28 13:51 Triangle.class
+ 930973 -rw-r--r--    1 pjha1994 Administ      910 Oct 28 13:51 TriangleTest.class
+3940596 -rw-r--r--    1 pjha1994 Administ      623 Oct 28 13:51 Vertex.class
+1847065 -rw-r--r--    1 pjha1994 Administ      503 Oct 28 13:51 Worker1.class
+2043493 -rw-r--r--    1 pjha1994 Administ      650 Oct 28 13:51 Worker2.class
+14537686 -rw-r--r--    1 pjha1994 Administ      411 Oct 28 13:51 WorkerClient.class
+3867079 -rw-r--r--    1 pjha1994 Administ      180 Oct 28 13:51 X.class
+ 602464 -rw-r--r--    1 pjha1994 Administ      326 Oct 28 13:51 X1.class
+ 603468 -rw-r--r--    1 pjha1994 Administ        0 Oct 20 08:00 Y
+6226392 -rw-r--r--    1 pjha1994 Administ      165 Oct 28 13:51 Y.class
+ 799123 -rw-r--r--    1 pjha1994 Administ      254 Oct 28 13:51 Y1.class
+5702107 -rw-r--r--    1 pjha1994 Administ      165 Oct 28 13:51 Z.class
+7145695 -rw-r--r--    1 pjha1994 Administ        0 Nov  2 07:17 a
+4010633 -rw-r--r--    1 pjha1994 Administ      730 Oct 20 08:00 a.cpp
+46552422 -rwxr-xr-x    1 pjha1994 Administ  1752084 Nov  3 20:20 a.exe
+5439919 -rw-r--r--    1 pjha1994 Administ      469 Oct 21 12:13 aa.cpp
+9634298 -rw-r--r--    1 pjha1994 Administ     1055 Oct 21 12:59 ab.cpp
+1902618 -rw-r--r--    1 pjha1994 Administ     1127 Oct 25 05:49 absoluteDiff.java
+2837553 -rw-r--r--    1 pjha1994 Administ      351 Nov  3 17:23 add.cpp
+ 930749 -rw-r--r--    1 pjha1994 Administ      655 Oct 15 05:17 allclasses-frame.html
+ 603072 -rw-r--r--    1 pjha1994 Administ      635 Oct 15 05:17 allclasses-noframe.html
+1717470 -rw-r--r--    1 pjha1994 Administ      961 Oct 20 07:05 arr.class
+ 805535 -rw-r--r--    1 pjha1994 Administ      530 Oct 29 09:07 arr.cpp
+1778645 -rw-r--r--    1 pjha1994 Administ        0 Nov  3 19:00 arr[i]
+4862608 -rw-r--r--    1 pjha1994 Administ        0 Oct 20 08:00 b
+6291337 -rw-r--r--    1 pjha1994 Administ     3371 Oct 20 12:18 b.cpp
+3936129 -rw-r--r--    1 pjha1994 Administ     2509 Oct 23 09:36 b.java
+5706973 -rw-r--r--    1 pjha1994 Administ      828 Oct 28 13:51 binSearch.class
+17497632 -rw-r--r--    1 pjha1994 Administ     1820 Oct 21 10:48 byte.cpp
+36007676 -rw-r--r--    1 pjha1994 Administ     2356 Oct 23 11:09 c.cpp
+11771968 -rw-r--r--    1 pjha1994 Administ      335 Oct 23 09:50 c.java
+7216510 -rw-r--r--    1 pjha1994 Administ      456 Nov  3 19:52 chars.cpp
+ 799665 -rw-r--r--    1 pjha1994 Administ     3626 Oct 15 05:17 constant-values.html
+8718220 -rw-r--r--    1 pjha1994 Administ        0 Nov  2 07:17 d
+ 865210 -rw-r--r--    1 pjha1994 Administ     3576 Oct 15 05:17 deprecated-list.html
+2892430 -rw-r--r--    1 pjha1994 Administ      709 Oct 25 04:42 easy.cpp
+4138512 -rw-r--r--    1 pjha1994 Administ      798 Oct 29 11:27 emma.cpp
+1657947 -rw-r--r--    1 pjha1994 Administ      514 Nov  2 20:19 even_fib.cpp
+7217750 -rw-r--r--    1 pjha1994 Administ      359 Nov  3 19:17 expenses.cpp
+5181998 -rw-r--r--    1 pjha1994 Administ     1280 Oct 30 08:03 factorial_java.java
+16736264 -rw-r--r--    1 pjha1994 Administ     1661 Oct 30 05:22 fib.cpp
+4914834 -rw-r--r--    1 pjha1994 Administ      339 Nov  3 17:20 first_last.cpp
+1657997 -rw-r--r--    1 pjha1994 Administ      374 Nov  3 18:47 gcd_lcm.cpp
+ 865359 -rw-r--r--    1 pjha1994 Administ      665 Oct 28 13:51 gibArray.class
+ 996290 -rw-r--r--    1 pjha1994 Administ     8108 Oct 15 05:17 help-doc.html
+ 603063 -rw-r--r--    1 pjha1994 Administ     5866 Oct 15 05:17 index-all.html
+ 996289 -rw-r--r--    1 pjha1994 Administ     2759 Oct 15 05:17 index.html
+ 805366 drwxr-xr-x    1 pjha1994 Administ        0 Oct 29 07:37 java
+1788770 -rw-r--r--    1 pjha1994 Administ      226 Oct 29 12:33 left_rotate.cpp
+11008695 -rw-r--r--    1 pjha1994 Administ      456 Oct 29 12:39 left_rotate1.cpp
+2633463 -rw-r--r--    1 pjha1994 Administ      960 Oct 27 13:13 linkList.class
+6889394 -rw-r--r--    1 pjha1994 Administ     2222 Oct 27 13:03 linkList.java
+19303228 -rw-r--r--    1 pjha1994 Administ      100 Nov  3 17:37 mirror.cpp
+1647571 -rw-r--r--    1 pjha1994 Administ        0 Nov  3 19:00 n
+3089014 -rw-r--r--    1 pjha1994 Administ     1063 Oct 20 07:29 ne.java
+1975810 -rw-r--r--    1 pjha1994 Administ      822 Oct 28 13:51 nestedLogic.class
+31480617 -rw-r--r--    1 pjha1994 Administ     1809 Oct 21 10:22 new 2.txt
+ 668594 -rw-r--r--    1 pjha1994 Administ     3816 Oct 15 05:17 overview-tree.html
+ 927778 -rw-r--r--    1 pjha1994 Administ      430 Oct 28 13:51 p.class
+ 930732 -rw-r--r--    1 pjha1994 Administ      763 Oct 15 05:17 package-frame.html
+ 865194 -rw-r--r--    1 pjha1994 Administ        2 Oct 15 05:17 package-list
+ 996271 -rw-r--r--    1 pjha1994 Administ     3985 Oct 15 05:17 package-summary.html
+ 865200 -rw-r--r--    1 pjha1994 Administ     3825 Oct 15 05:17 package-tree.html
+19374621 -rw-r--r--    1 pjha1994 Administ      678 Oct 21 13:29 prime.cpp
+ 676500 -rw-r--r--    1 pjha1994 Administ      398 Nov  3 20:20 primecheck.cpp
+5710544 -rw-r--r--    1 pjha1994 Administ      330 Oct 26 09:50 query.cpp
+3609560 -rw-r--r--    1 pjha1994 Administ     1517 Oct 30 08:10 r.class
+3099459 -rw-r--r--    1 pjha1994 Administ      249 Nov  3 17:02 remainder.cpp
+6955924 -rw-r--r--    1 pjha1994 Administ      339 Nov  3 17:28 reverse.cpp
+2699000 -rw-r--r--    1 pjha1994 Administ      875 Oct 27 13:13 runNow.class
+2699661 -rw-r--r--    1 pjha1994 Administ     1243 Oct 28 13:51 s1.class
+1712327 -rw-r--r--    1 pjha1994 Administ     1374 Oct 28 13:51 s2.class
+2958778 -rw-r--r--    1 pjha1994 Administ      907 Oct 28 13:51 s3.class
+15455160 -rw-r--r--    1 pjha1994 Administ      252 Oct 28 13:51 s4.class
+3265492 -rw-r--r--    1 pjha1994 Administ     1073 Oct 28 13:51 s5.class
+1782728 -rw-r--r--    1 pjha1994 Administ      857 Oct 15 05:17 script.js
+1723405 -rw-r--r--    1 pjha1994 Administ      495 Nov  3 18:26 second_largest.cpp
+ 741288 -rw-r--r--    1 pjha1994 Administ       58 Oct 31 02:19 sets.cp
+3354773 -rw-r--r--    1 pjha1994 Administ      739 Oct 31 15:31 sets.cpp
+9917369 -rw-r--r--    1 pjha1994 Administ      803 Oct 25 05:33 small_large.cpp
+2641172 -rw-r--r--    1 pjha1994 Administ      477 Nov  3 19:00 smpair.cpp
+1245705 -rw-r--r--    1 pjha1994 Administ      715 Nov  2 07:26 step.cpp
+2827539 -rw-r--r--    1 pjha1994 Administ      906 Oct 20 07:05 str.class
+2958545 -rw-r--r--    1 pjha1994 Administ     8256 Oct 20 07:29 str.java
+4148826 -rw-r--r--    1 pjha1994 Administ      716 Nov  1 22:01 string.cpp
+ 865220 -rw-r--r--    1 pjha1994 Administ    13382 Oct 13 03:22 stylesheet.css
+4967458 -rw-r--r--    1 pjha1994 Administ      308 Nov  3 16:37 sum_digits.cpp
+5186373 -rw-r--r--    1 pjha1994 Administ      356 Nov  3 19:21 sum_four.cpp
+2042568 -rw-r--r--    1 pjha1994 Administ      491 Oct 21 13:52 trial.cpp
+4855665 -rw-r--r--    1 pjha1994 Administ     3144 Oct 28 13:51 trial1.class
+ 996264 -rw-r--r--    1 pjha1994 Administ     8977 Oct 13 03:22 trial1.html
+7799663 -rw-r--r--    1 pjha1994 Administ      440 Oct 28 13:51 trial2.class
+48125688 -rw-r--r--    1 pjha1994 Administ     3535 Oct 28 13:51 trial3.class
+4064000 -rw-r--r--    1 pjha1994 Administ     2698 Oct 28 13:51 tryingString.class
+7261205 -rw-r--r--    1 pjha1994 Administ        0 Nov  3 20:57 tx.txt
+3093753 -rw-r--r--    1 pjha1994 Administ      464 Oct 20 07:29 val.class
+4730391 -rw-r--r--    1 pjha1994 Administ      386 Nov  3 20:03 valid_triangle.cpp
+4793778 -rw-r--r--    1 pjha1994 Administ      653 Nov  3 19:46 wins_losses.cpp
