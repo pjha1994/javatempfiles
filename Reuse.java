@@ -4,8 +4,745 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
+import java.util.Random;
 import static java.lang.System.out;
 
+class Player{
+	private String name, country;
+	int matches;
+	Player(String name, String country){
+		this.name = name;
+		this.country = country;
+	}
+	String getName(){return name;}
+	String getCountry(){return country;}
+	int getMatchesPlayed(){return matches;}
+	
+	double computeImpactFactor(){
+		if(matches>=100)
+			return 0.9;
+		else if(matches>=50 && matches<75)
+			return 0.7;
+		else
+			return 0.5;
+	}
+}
+class CricketPlayer extends Player{
+	int firstclassRuns;
+	double batting_avg;
+	double bowling_avg;
+	int man_of_matches;
+	int no_catches;
+	
+	CricketPlayer(String name, String country, int runs){
+		super(name, country);
+		firstclassRuns = runs;
+	}
+	CricketPlayer(String name, String country){
+		super(name, country);
+	}
+	boolean isAllRounder(){
+		return batting_avg>=35 && bowling_avg<30;
+	}
+	void addCatchCount(){no_catches++;}
+	void updateBattingAvg(int currentRuns){
+		batting_avg = (batting_avg*100+currentRuns)/100;
+	}
+	public double getBattingAvg(){return batting_avg;}
+	double computeImpactFactor(){
+		if(batting_avg>=40 && bowling_avg<30)
+			return 0.9;
+		else if((batting_avg>=30 && batting_avg<40)&&(bowling_avg>30 && bowling_avg<=45))
+			return 0.7;
+		else
+			return 0.5;
+	}
+}
+class FootBallPlayer extends Player{
+	int goalsScored;
+	double goalAvg;
+	boolean isGoalKeeper = false;
+	FootBallPlayer(String name, String country){
+		super(name, country);
+	}
+	void updateGoals(int currentgoals){
+		goalsScored += currentgoals;
+	}
+	int getGoals(){
+		return goalsScored;
+	}
+	public double getGoalAvg(){
+		return goalAvg;
+	}
+	void makeGoalKeeper(){
+		isGoalKeeper = true;
+	}
+	boolean isGoalKeeper(){return isGoalKeeper;}
+	double computeImapctFactor(){
+		if(goalAvg>=4.0)
+			return 0.9;
+		else if(goalAvg>1.0 && goalAvg<4.0)
+			return 0.7;
+		else
+			return 0.5;
+	}
+}
+class SportsAuthority{
+	String country;
+	private ArrayList SelectionList;
+	private ArrayList SpectatorList;
+	
+	SportsAuthority(String country){
+		this.country = country;
+		SelectionList = new ArrayList();
+		SpectatorList = new ArrayList();
+	}
+	void makePlayerList(){
+		try{
+			for(int i=0;i<5;i++){
+				Random r = new Random();
+				int status = r.nextInt(4)+1;//0 to 3 and then add 1
+				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				System.out.println(status);
+				switch(status){
+					case 1:
+					System.out.println("Enter player name");
+					String name1 = br.readLine();
+					System.out.println("Enter the country");
+					String country1  = br.readLine();
+					Player p = new Player(name1,country1);
+					addPlayer(p);
+					break;
+					case 2:
+					System.out.println("Enter Cricketer name");
+					String name2 = br.readLine();
+					System.out.println("Enter the country");
+					String country2  = br.readLine();
+					CricketPlayer cp = new CricketPlayer(name2,country2);
+					addPlayer(cp);
+					break;
+					case 3:
+					System.out.println("Enter Footballplayer name");
+					String name3 = br.readLine();
+					System.out.println("Enter the country");
+					String country3  = br.readLine();
+					FootBallPlayer fp = new FootBallPlayer(name3,country3);
+					addPlayer(fp);
+					break;
+					default:
+					System.out.println("Enter spectator name");
+					String name4 = br.readLine();
+					SpectatorList.add(name4);
+				}
+			}
+		}
+		catch(IOException ioe){
+			System.out.println(ioe);
+		}
+	}
+	void addPlayer(Player currentPlayer){
+		if(currentPlayer instanceof CricketPlayer){
+			if((((CricketPlayer)currentPlayer).getBattingAvg())>=70.0)
+				SelectionList.add(currentPlayer);
+		}
+		if(currentPlayer instanceof FootBallPlayer)
+			if(((FootBallPlayer)currentPlayer).getGoalAvg()>3.5)
+				SelectionList.add(currentPlayer);
+	}
+	void printPlayerList(){
+		Iterator itr = SelectionList.iterator();
+		while(itr.hasNext())
+			System.out.println(itr.next());
+	}
+	void printSpectatorList(){
+		Iterator itr = SpectatorList.iterator();
+		while(itr.hasNext())
+			System.out.println(itr.next());
+	}
+}
+class Cricket{
+	public static void main(String[] args){
+		SportsAuthority sal = new SportsAuthority("India");
+		sal.makePlayerList();
+		sal.printPlayerList();
+		sal.printSpectatorList();
+	}
+}
+class Matrix2{
+	private int a[][];
+	private int Rows, Cols;
+	int getRows(){return Rows;}
+	int getCols(){return Cols;}
+	
+	Matrix2(int Rows, int Cols){
+		this.Rows = Rows; this.Cols = Cols;
+		a = new int[Rows][Cols];
+	}
+	Matrix2(){
+		this(3,3);
+	}
+	int getElementAt(int i, int j){return a[i][j];}
+	
+	void setElementAt(int i, int j, int newVal){a[i][j] = newVal;}
+	
+	boolean findElement(int element){
+		boolean isthere = false;
+		for(int i=0;i<getRows();i++)
+			for(int j=0;j<getCols();j++)
+				if(a[i][j] == element){
+					isthere = true;
+					break;
+				}
+		return isthere;
+	}
+	void fillMatrix(){
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			for(int i=0;i<getRows();i++)
+				for(int j=0;j<getCols();j++){
+					System.out.println("Enter an element (" + i+","+j+"): ");
+					int t = (int) Integer.parseInt(br.readLine());
+					a[i][j] = t;
+				}
+		}
+		catch(IOException ioe){System.out.println(ioe);}
+	}
+	Matrix2 addWith(Matrix2 other)
+		throws AdditionNotPossibleException{
+			Matrix2 m;
+			if(this.getRows() == other.getRows()&&other.getCols() == other.getCols()){
+				m = new Matrix2(getRows(), getCols());
+				for(int i=0;i<getRows();i++)
+					for(int j=0;j<getCols();j++)
+						m.setElementAt(i,j,this.getElementAt(i,j)+other.getElementAt(i,j));
+				return m;
+			}
+			else
+				throw new AdditionNotPossibleException();//matrix not returned on alternate path
+	}
+	Matrix2 subtractWith(Matrix2 other)
+		throws AdditionNotPossibleException{
+			Matrix2 m;
+			if(this.getRows() == other.getRows()&&other.getCols() == other.getCols()){
+				m = new Matrix2(getRows(), getCols());
+				for(int i=0;i<getRows();i++)
+					for(int j=0;j<getCols();j++)
+						m.setElementAt(i,j,this.getElementAt(i,j)-other.getElementAt(i,j));
+				return m;
+			}
+			else
+				throw new AdditionNotPossibleException();
+	}
+	void printMatrix(){
+		for(int i=0;i<getRows();i++){
+					for(int j=0;j<getCols();j++)
+						System.out.print(a[i][j]+"\t");
+		System.out.println();
+		}
+	}
+	Matrix2 getTranspose(){
+		Matrix2 m;
+		m = new Matrix2(getCols(),getRows());
+		for(int i =0; i<m.getRows(); i++)
+			for(int j = 0; j<m.getCols(); j++)
+				m.setElementAt(i,j,a[j][i]);
+		return m;
+	}
+	public int findAndReplaceElement(int element, int val)
+		throws NoSuchElementFoundException{
+		//int position = 0;
+		//boolean found = false;
+		for(int i =0; i<getRows(); i++)
+			for(int j = 0; j<getCols(); j++)
+				if(a[i][j] == element){
+					//found = true;
+					System.out.println("Replacement is successful.");
+					return 10*i+j;
+				}
+		throw new NoSuchElementFoundException();
+	}
+}
+class NoSuchElementFoundException extends Exception{
+	public String toString(){
+		return "The given element is absent in the matrix, Replacement is unsucessful";
+	}
+}
+class AdditionNotPossibleException extends Exception{
+	public String toString(){
+		return "Rows and columns does not match: Invalid operation!";
+	}
+}
+class MatrixDriver{
+	public static void main(String a[]){
+		int r, c, choice, status = 1;
+		Matrix2 A, B, AplusB, difference, transpose;
+		do{
+			try{
+				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				System.out.println("This program performs basic matrix operations");
+				System.out.println("Enter your choice : ");
+				System.out.println("Enter 1 for addition ");
+				System.out.println("Enter 2 for subtraction ");
+				System.out.println("Enter 3 for Transpose ");
+				System.out.println("Enter 4 to perform Matrix search ");
+				choice = Integer.parseInt(br.readLine());
+				switch(choice){
+					case 1:
+					System.out.println("Enter the number of rows for Matrix A");
+					r = Integer.parseInt(br.readLine());
+					System.out.println("Enter the number of cols for Matrix A");
+					c = Integer.parseInt(br.readLine());
+					A = new Matrix2(r,c);
+					System.out.println("Enter the number of rows for Matrix B");
+					r = Integer.parseInt(br.readLine());
+					System.out.println("Enter the number of cols for Matrix B");
+					c = Integer.parseInt(br.readLine());
+					B = new Matrix2(r,c);
+					
+					A.fillMatrix();
+					System.out.println("Entered matrix A is ");
+					A.printMatrix();
+					B.fillMatrix();
+					System.out.println("Entered matrix B is ");
+					B.printMatrix();
+					
+					AplusB = A.addWith(B);
+					System.out.println("Addition of two matrices is ");
+					AplusB.printMatrix();
+					break;
+					case 2:
+					System.out.println("Enter the number of rows for Matrix A");
+					r = Integer.parseInt(br.readLine());
+					System.out.println("Enter the number of cols for Matrix A");
+					c = Integer.parseInt(br.readLine());
+					A = new Matrix2(r,c);
+					System.out.println("Enter the number of rows for Matrix B");
+					r = Integer.parseInt(br.readLine());
+					System.out.println("Enter the number of cols for Matrix B");
+					c = Integer.parseInt(br.readLine());
+					B = new Matrix2(r,c);
+					
+					A.fillMatrix();
+					System.out.println("Entered matrix A is ");
+					A.printMatrix();
+					B.fillMatrix();
+					System.out.println("Entered matrix B is ");
+					B.printMatrix();
+					
+					difference = A.subtractWith(B);
+					System.out.println("Difference of two matrices is ");
+					difference.printMatrix();
+					break;
+					case 3:
+					System.out.println("Enter the number of rows for Matrix A");
+					r = Integer.parseInt(br.readLine());
+					System.out.println("Enter the number of cols for Matrix A");
+					c = Integer.parseInt(br.readLine());
+					A = new Matrix2(r,c);
+					
+					A.fillMatrix();
+					System.out.println("Entered matrix A is ");
+					A.printMatrix();
+					
+					transpose = A.getTranspose();
+					System.out.println("Transpose of matrix  A is ");
+					transpose.printMatrix();
+					break;
+					case 4:
+					System.out.println("Enter the number of rows for Matrix A");
+					r = Integer.parseInt(br.readLine());
+					System.out.println("Enter the number of cols for Matrix A");
+					c = Integer.parseInt(br.readLine());
+					A = new Matrix2(r,c);
+					
+					A.fillMatrix();
+					System.out.println("Entered matrix A is ");
+					A.printMatrix();
+					System.out.println("Number to be searched to be in the matrix:");
+					int num = Integer.parseInt(br.readLine());
+					if(A.findElement(num))
+						System.out.println("Serach is successful ");
+					else
+						System.out.println("Serach is uncessful");
+					break;
+					default:
+					System.out.println("Invalid choice");
+					break;
+					
+				}
+				System.out.println("Enter 0 to terminate");
+				status = Integer.parseInt(br.readLine());
+			}
+			catch(AdditionNotPossibleException anpe){
+				System.out.println(anpe);
+			}
+			catch(IOException ioe){
+				System.out.println(ioe);
+			}
+		}while(status!=0);
+	}
+}
+abstract class Person3{
+	String Name;
+	int age;
+	double Salary;
+	boolean isHesigned = false;
+	Person3(String s, int ag){Name = s; age = ag;}
+	public String getName(){return Name;}
+	public int getAge(){return age;}
+	
+	public abstract void payAmount(double amt) 
+		throws DontPayAmountException;
+}
+class Worker3 extends Person3{
+	Worker3(String s, int a, boolean sign){
+		super(s,a);
+		isHesigned = sign;
+	}
+	public void payAmount(double sal)
+		throws DontPayAmountException{
+			if(!isHesigned)
+				throw new DontPayAmountException();
+			else
+				super.Salary = sal;
+		}
+	public void displayDetails(){
+		System.out.println("Nmae = "+super.Name+" Age = "+super.age+" Amount = "+super.Salary);
+	}
+}
+class HourlyWorker1 extends Worker3{
+	int No_Hours;
+	HourlyWorker1(String nm, int ag, boolean sign, int No_Hrs){
+		super(nm, ag, sign);
+		this.No_Hours = No_Hrs;
+	}
+	public void payAmount(double perHour)
+		throws DontPayAmountException{
+			super.payAmount(perHour*No_Hours);
+		}
+}
+class DailyWorker1 extends Worker3{
+	int No_Days;
+	DailyWorker1(String nm, int ag, boolean sign, int No_Days){
+		super(nm, ag, sign);
+		this.No_Days = No_Days;
+	}
+	public void payAmount(double perday)
+		throws DontPayAmountException{
+			super.payAmount(perday*No_Days);
+		}
+}
+class DontPayAmountException extends Exception{
+	public String toString(){
+		return "He has not signed : Don't pay any salary.";
+		}
+}
+class AbstractClassTest{
+	public static void main(String[] args){
+		try{
+			Worker3 currentworker = new Worker3("Ramesh", 25, false);
+			currentworker.payAmount(1000);
+			currentworker.displayDetails();
+		}
+		catch(DontPayAmountException dpe){
+			System.out.println(dpe);
+		}
+		try{
+			HourlyWorker1 HW = new HourlyWorker1("Kishore", 27, true, 8);
+			HW.payAmount(100);
+			HW.displayDetails();
+		}
+		catch(DontPayAmountException dpe){
+			System.out.println(dpe);
+		}
+		try{
+			DailyWorker1 DW = new DailyWorker1("Ramkiran", 27, true, 10);
+			DW.payAmount(800);
+			DW.displayDetails();
+		}
+		catch(DontPayAmountException dpe){
+				System.out.println(dpe);
+		}
+	}
+}
+class BankAccount1{
+	private long number;
+	private long balance;
+	
+	public static class Permission{//Nested class
+		public boolean canDeposit, canWithdraw, canClose;
+		public static void main(String[] args){
+			System.out.println("Nested class");
+		}
+	}
+	//...
+}
+interface Sorting1{
+	public void Sort(Object aseqence[], MyComparator mc);
+}
+class InsertionSort1 implements Sorting1{
+	public void Sort(Object[] list, MyComparator mc){
+		for(int i=0;i<list.length;i++)
+			insert(list, i-1, i,mc);
+	}
+	private void insert(Object a[], int upto, int j, MyComparator mc){
+		Object temp = a[j];
+		int i = upto;
+		while(i>=0&& mc.compare(a[i],temp)>0){
+			a[i+1] = a[i];
+			i--;
+		}
+		a[i+1] = temp;
+	}
+};
+interface MyComparator{
+	public int compare(Object o1, Object o2); 
+};
+class StringComparator implements MyComparator{
+	public int compare(Object obj1, Object obj2){
+		String s1 = (String)obj1;
+		String s2 = (String)obj2;
+		return s1.compareTo(s2);
+	}
+};
+class IntegerComparator implements MyComparator{
+	public int compare(Object obj1, Object obj2){
+		int a1 = ((Integer)obj1).intValue();
+		int a2 = ((Integer)obj2).intValue();
+		return a1 - a2;
+	}
+};
+class MyList{
+	Random r = new Random();
+	private Object list_elements[];
+	int size = 0;
+	String ListType;
+	MyList(int size, String type){
+		this.size = size;
+		ListType = type;
+		list_elements = new Object[size];
+		if(ListType.equalsIgnoreCase("Strings"))
+			fillWithRandomStrings();
+		else if(ListType.equalsIgnoreCase("integers"))
+			fillWithRandomIntegers();
+		else
+			System.out.println("Invalid data type");
+	}
+	void fillWithRandomIntegers(){
+		for(int i=0;i<list_elements.length;i++)
+			list_elements[i] = new Integer(r.nextInt(10));
+	}
+	private String generateRandomString(int length){
+		String temp ="";
+		char ch;
+		for(int i=0;i<length;i++){
+			ch = (char)(r.nextInt('Z'-'A'+1)+'A');
+			temp += ch;
+		}
+		return temp;
+	}
+	void fillWithRandomStrings(){
+		for(int i = 0;i<list_elements.length;i++)
+			list_elements[i] = generateRandomString(5);
+	}
+	public void printList(){
+		for(int i=0;i<list_elements.length;i++)
+			System.out.println("\t"+list_elements[i]);
+		System.out.println();
+	}
+	public Object[] getList(){
+		return list_elements;
+	}
+}
+class BubbleSort1 implements Sorting1{
+	public void Sort(Object list1[], MyComparator mc){
+		for(int i=0;i<list1.length;i++)
+			for(int j =i+1;j<list1.length;j++)
+				if(mc.compare(list1[i],list1[j])>0){
+					Object temp = list1[j];
+					list1[j] = list1[i];
+					list1[i] = temp;
+				}
+	}
+}
+class SortingExample1{
+	public static void printList(int a[]){
+		for(int i=0;i<a.length;i++)
+			System.out.println(a[i]+"\t");
+	}
+	public static void main(String[] args){
+		System.out.println("String List");
+		MyList list1 = new MyList(5, "strings");
+		list1.printList();
+		MyComparator comp1 = new StringComparator();
+		Sorting1 strategy1 = new BubbleSort1();
+		strategy1.Sort(list1.getList(),comp1);
+		list1.printList();
+		System.out.println("Integer List");
+		MyList list2 = new MyList(5,"Integers");
+		list2.printList();
+		MyComparator comp2 = new IntegerComparator();
+		Sorting1 strategy2 = new InsertionSort1();
+		strategy2.Sort(list2.getList(),comp2);
+		list2.printList();
+	}
+};
+interface Sorting{
+	public void Sort(int aseqence[]);
+};
+class BubbleSort implements Sorting{
+	public void Sort(int list1[]){
+		for(int i=0;i<list1.length;i++)
+			for(int j = i+1;j<list1.length;j++)
+				if(list1[i]>list1[j]){
+					int temp = list1[i];
+					list1[i] = list1[j];
+					list1[j] = temp;
+				}
+	}
+};
+class InsertionSort implements Sorting{
+	public void Sort(int[] list){
+		for(int i=1;i<list.length;i++)
+			insert(list, i-1, i);
+	}
+	public void insert(int a[], int upto, int j){
+		int temp  = a[j];
+		int i = upto;
+		while(i>=0 && a[i]>temp){
+			a[i+1] = a[i];
+			i--;
+		}
+		a[i+1] = temp;
+	}
+};
+class SortingExample{
+	public static void printList(int a[]){
+		for(int i=0;i<a.length;i++)
+			System.out.println(a[i]+"\t");
+	}
+	public static void main(String[] args){
+		int a[] = new int[5];
+		Random r = new Random();
+		for(int i =0;i<a.length;i++)
+			a[i] = r.nextInt(21);
+		
+		System.out.println("The array before sortig is: ");
+		printList(a);
+		
+		Sorting currentsortingtechnique = new BubbleSort();
+		currentsortingtechnique.Sort(a);
+		
+		System.out.println("The sorted array is: ");
+		printList(a);
+	}
+};
+interface Element{
+	public void createElement();
+};
+class IntTypeElement implements Element{
+	private Integer i;
+	int a;
+	public IntTypeElement(int a){this.a = a;}
+	public void createElement(){i = new Integer(a);}
+}
+class Student2{
+	private String name;
+	private Student2 s;
+	private double CG;
+	public Student2(String name1, double cg){
+		name = name1; CG = cg;
+	}
+	public Student2(){name = null;CG = 0.0;}
+	public String getName(){return name;}
+	public void setName(String s){name = s;}
+	public void setCG(double cg){CG = cg;}
+};
+class StudentTypeElement implements Element{
+	private Student2 s;
+	public void createElement(){s = new Student2();}
+	public void fillCG(double newcg){s.setCG(newcg);}
+	public void fillName(String newname){s.setName(newname);}
+};
+class ArrayStack1{
+	public static final int CAPACITY = 100;
+	public ArrayStack1(){
+		capacity = CAPACITY;
+	}
+	public ArrayStack1(int size){
+		capacity = size;
+		S = new Element[capacity];
+	}
+	public int size(){
+		return 1;
+	}
+	public boolean isEmpty(){
+		return true;
+	}
+	public void push(Element o){
+		;
+	}
+	public Element pop(){
+		return new IntTypeElement(1);
+	}
+	private int capacity;
+	private Element S[];
+	private int top = -1;
+};
+interface IntType{
+	public IntType add(IntType other);
+	public IntType subtract(IntType other);
+	public IntType multiply(IntType other);
+	public IntType divide(IntType other);
+};
+class LongInt implements IntType{
+	long num;
+	LongInt(long anum){num = anum;}
+	long getIntValue(){return num;}
+	public IntType add(IntType other){
+		return new LongInt(this.getIntValue()+((LongInt)other).getIntValue());
+	}
+	public IntType subtract(IntType other){return new LongInt(1);}
+	public IntType multiply(IntType other){return new LongInt(1);}
+	public IntType divide(IntType other){return new LongInt(1);}
+	
+};
+class SimpleInt implements IntType{
+	int num1;
+	SimpleInt(int anum){num1 = anum;}
+	int getIntValue(){return num1;}
+	public IntType add(IntType other){
+		int t1 = 0;
+		if(other instanceof SimpleInt){
+			t1 = this.getIntValue();
+			((SimpleInt)other).getIntValue();
+		}
+		return new SimpleInt(t1);
+	}
+	public IntType subtract(IntType other){return new LongInt(1);}
+	public IntType multiply(IntType other){return new LongInt(1);}
+	public IntType divide(IntType other){return new LongInt(1);}
+} 
+class IntInterface{
+	public static void main(String[] args){
+		long a = 2900;
+		long b = 4800;
+		LongInt A = new LongInt(a);
+		LongInt B = new LongInt(b);
+		LongInt C = (LongInt)A.add(B);
+		
+		System.out.println("Adding two long integers "+ C.getIntValue());
+		
+		int p = -1;
+		int q = 5;
+		
+		SimpleInt P = new SimpleInt(p);
+		SimpleInt Q = new SimpleInt(q);
+		SimpleInt R = (SimpleInt)P.add(Q);
+		
+		System.out.println("Adding two usual integers "+ R.getIntValue());
+	}
+}
 abstract class SortDouble{
 	private double[] values;
 	private final SortMetrics cutMetrics = new SortMetrics();
